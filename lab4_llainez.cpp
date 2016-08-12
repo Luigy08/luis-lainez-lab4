@@ -1,4 +1,6 @@
 #include <iostream>
+#include<iomanip>
+#include "trianguloPascal.h"
 using namespace std;
 void divicion(int*,int,int);
 int* formar(int);
@@ -22,6 +24,33 @@ int main(int argc,char const *argv[]){
 				delete[] polinomio;
 				break;
 			
+			}
+			case 2:{
+				cout<<"\tEjercicio 2"<<endl;
+				int linea;
+				trianguloPascal* triangulo=new trianguloPascal(linea);
+				cout<<"Lineas: ";
+				cin>>linea;
+				int doble=linea*2;
+				for(int i=0;i<linea;i++){
+					for(int j=0;j<=doble;j++){
+						cout<<" ";
+					}
+					for(int h=0;h<=i;h++){
+					//	cout<<setw(4)<<triangulo->calcularPascal(i,h);
+						if((triangulo->calcularPascal(i,h))%2==0){
+							cout<<setw(4)<<"*";
+						}else{
+							cout<<setw<<"o";
+						}
+					
+					}
+					doble-=2;
+					cout<<endl;
+				
+				}
+				delete triangulo;
+				break;
 			}
 		}
 	}

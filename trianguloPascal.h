@@ -3,7 +3,8 @@ class trianguloPascal{
 		int lineas;
 	public:
 		trianguloPascal(int);
-		~trianguloPascal();
-		void calcularPascal(int);
-		int factorial(int,int);
-}
+		trianguloPascal();
+		 ~trianguloPascal();
+		int calcularPascal(int,int);
+		int factorial(int);
+};

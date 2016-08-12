@@ -1,9 +1,9 @@
 #include "trianguloPascal.h"
 
 trianguloPascal::trianguloPascal(int l){
-	linea=l;
+	lineas=l;
 }
-trianguloPascal::factorial(int linea){
+int trianguloPascal::factorial(int linea){
 	int fac=1;
 	for(int i =1;i<=linea;i++){
 		fac*=i;
@@ -11,6 +11,13 @@ trianguloPascal::factorial(int linea){
 	return fac;
 }
 
+int trianguloPascal::calcularPascal(int numero,int posicion){
+	int salida;
+	salida=factorial(numero)/(factorial(numero-posicion)*factorial(posicion));
+	return salida;
+}
+trianguloPascal::~trianguloPascal(){
 
+}
 
 
