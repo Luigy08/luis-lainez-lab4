@@ -6,8 +6,8 @@ void divicion(int*,int,int);
 int* formar(int);
 int main(int argc,char const *argv[]){
 	int op=0;
-	while(op!=3){
-		cout<<"1.-Ejercicio 1"<<endl<<"2.-Ejercicio 2"<<endl<<"...";
+	while(op!=4){
+		cout<<"1.-Ejercicio 1"<<endl<<"2.-Ejercicio 2"<<endl<<"3.- probando"<<endl<<"4.salir...";
 		cin>>op;
 		
 		switch(op){
@@ -52,17 +52,18 @@ int main(int argc,char const *argv[]){
 				break;
 			}
 			case 4:{
-				int*** p=new int**[4];
-				for(int i=0;i<=4;i++){
-					for(int j=0;j<=4;j++){
-						for(int h=0;h<=4;h++){
-						
+				int p[3][3][3];
+				for(int i=0;i<3;i++){
+					for(int j=0;j<3;j++){
+						for(int h=0;h<3;h++){
 								p[i][j][h]=0;
 								cout<<"["<<p[i][j][h]<<"]";
 							
 						}
+						cout<<endl;
 							
 					}
+					cout<<endl;
 				}
 				break;
 			}
@@ -76,7 +77,7 @@ void divicion(int* polinomio,int grado,int binomio){
 	int tem=1;
 	for(int i=0;i<grado+1;i++){
 		
-		if(i==0){
+			if(i==0){
 			tem=polinomio[i];
 		}else{
 			tem=polinomio[i]+(tem*binomio);
