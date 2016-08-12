@@ -52,14 +52,19 @@ int main(int argc,char const *argv[]){
 				break;
 			}
 			case 4:{
-				int*** p=new int*[4];
+				int*** p=new int**[4];
 				for(int i=0;i<=4;i++){
 					for(int j=0;j<=4;j++){
 						for(int h=0;h<=4;h++){
-							p[][][]
+						
+								p[i][j][h]=0;
+								cout<<"["<<p[i][j][h]<<"]";
+							
 						}
+							
 					}
 				}
+				break;
 			}
 		}
 	}
