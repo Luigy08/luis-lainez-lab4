@@ -41,7 +41,7 @@ int main(int argc,char const *argv[]){
 						if((triangulo->calcularPascal(i,h))%2==0){
 							cout<<setw(4)<<"*";
 						}else{
-							cout<<setw<<"o";
+							cout<<setw(4)<<"o";
 						}
 					
 					}
