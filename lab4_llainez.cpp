@@ -37,7 +37,6 @@ int main(int argc,char const *argv[]){
 						cout<<" ";
 					}
 					for(int h=0;h<=i;h++){
-					//	cout<<setw(4)<<triangulo->calcularPascal(i,h);
 						if((triangulo->calcularPascal(i,h))%2==0){
 							cout<<setw(4)<<"*";
 						}else{
@@ -52,6 +51,16 @@ int main(int argc,char const *argv[]){
 				delete triangulo;
 				break;
 			}
+			case 4:{
+				int*** p=new int*[4];
+				for(int i=0;i<=4;i++){
+					for(int j=0;j<=4;j++){
+						for(int h=0;h<=4;h++){
+							p[][][]
+						}
+					}
+				}
+			}
 		}
 	}
 	return 0;
@@ -61,6 +70,7 @@ void divicion(int* polinomio,int grado,int binomio){
 	int residuo;
 	int tem=1;
 	for(int i=0;i<grado+1;i++){
+		
 		if(i==0){
 			tem=polinomio[i];
 		}else{
@@ -126,6 +136,7 @@ int* formar(int grado){
 		cin>>tem;
 		polinomio[i]=tem;
 		gradoTem--;
+		
 	}
 	return polinomio;
 }
